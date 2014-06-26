@@ -1,0 +1,47 @@
+sudp app-get update
+sudo apt-get install lamp-server^
+
+Q: Do I need to compile PHP programs before executing them, as in Java or C++?
+A: No, because PHP is an interpreted language. One advantage of an interpreted language
+is that it allows you to make changes to your source code and immediately test these
+changes, without first needing to compile your source code into binary form.
+Skipping the compilation step makes the development process much faster, and PHP comes with built-in
+memory management and caching to negate the effect of the additional run-time load
+associated with using an interpreter.
+
+
+page 33 on the steps take Joe takes
+
+
+page 41
+Escape sequences, such as those for line feeds (\n), carriage returns (\r), and double
+quotation marks (\"), can only be understood by the PHP parser when they are themselves
+enclosed in double quotes. If these escape sequences are enclosed in single quotes, they
+will be printed “as is.”
+
+
+Book page 27
+Q: Does PHP support numbers written in hexadecimal, octal, or scientific notation?
+A: Yes, yes, and yes. Here are some examples:
+<?php
+// 8, specified as octal value
+$a = 010;
+// 1500, specified as hexadecimal value
+$b = 0x5dc;
+// 690, in scientific notation
+$c = 6.9E+2;
+?>
+
+
+---
+
+Many novice PHP developers mistakenly believe that assigning the empty string '' to a
+variable automatically renders it empty. This is untrue, as PHP does not consider a NULL
+value equivalent to an empty string. To definitely remove a variable’s contents, always
+set it to NULL.
+
+----
+
+
+
+
