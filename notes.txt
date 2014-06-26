@@ -41,6 +41,19 @@ value equivalent to an empty string. To definitely remove a variable’s content
 set it to NULL.
 
 ----
+book page 40
+
+What’s going on here? Well, whenever a form is submitted to a PHP script through the
+POST method, the form’s input variables and their values automatically become available
+to the PHP script through a special container variable named $_POST. Accessing the value
+entered into a particular form field then becomes as simple as referencing $_POST with
+the corresponding field’s name,
+
+---
+
+unset( $variableName ) // this makes $variableName undefined
+$variableName = null // this sets the variable to null but the variable is not undefined
+
 
 
 
